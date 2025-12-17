@@ -12,7 +12,7 @@ export default function Player() {
           <p>{songsData[0].desc.slice(0, 12)}</p>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-1 m-auto">
+      <div className="flex flex-col items-center gap-1 m-auto translate-x-27">
         <div className="flex gap-4">
           <img className="w-6 cursor-pointer m-2" src={assets.shuffle_icon} />
           <img className="w-6 cursor-pointer m-2" src={assets.prev_icon} />
@@ -22,13 +22,13 @@ export default function Player() {
         </div>
         <div className="flex items-center gap-5">
           <p>1:06</p>
-          <div className="w-[60vw] max-w-125 bg-gray-300 rounded-full cursor-pointer">
+          <div className="w-[60vw] max-w-200 bg-gray-300 rounded-full cursor-pointer">
             <hr className="h-1 border-none w-0 bg-green-800 rounded-full" />
           </div>
           <p>3:20</p>
         </div>
       </div>
-      <div className="hidden lg:flex items-center gap-2 opacity-75">
+      <div className="hidden lg:flex items-center gap-6 opacity-75">
         <img src={assets.mic_icon} className="w-6 cursor-pointer" />
         <img src={assets.queue_icon} className="w-6 cursor-pointer" />
         <img src={assets.speaker_icon} className="w-6 cursor-pointer" />
