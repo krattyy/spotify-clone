@@ -13,7 +13,7 @@ export default function Navbar() {
           />
         </div>
 
-        <div className="flex-1 flex justify-center items-center gap-2 max-w-[700px] mr-50 mt-1">
+        <div className="flex-1 flex justify-center items-center gap-2 max-w-175 mr-50 mt-1">
           <div
             onClick={() => navigate("/")}
             className="bg-[#1F1F1F] w-15 h-15 rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
@@ -36,7 +36,7 @@ export default function Navbar() {
               placeholder="Ne çalmak istiyorsun?"
               className="bg-transparent w-full text-[20px] text-white border-none outline-none placeholder-gray-400 truncate "
             />
-            <div className="w-[1px] h-6 bg-white/50 mx-3 hidden sm:block"></div>
+            <div className="w-px h-6 bg-white/50 mx-3 hidden sm:block"></div>
             <img
               className="w-8 h-8 invert opacity-75 hover:opacity-100 cursor-pointer"
               src={assets.browse_icon || assets.browse}

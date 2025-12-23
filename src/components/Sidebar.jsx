@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 export default function Sidebar() {
   return (
     <div className="w-[%] h-full p-2 flex flex-col gap-2 text-white lg:flex pt-1 pb-1">
-      <div className="bg-[#121212] h-[100%] rounded-2xl">
+      <div className="bg-[#121212] h-full rounded-2xl">
         <div className="p-4 flex items-center justify-between">
           <div className="flex items-center gap-3 ">
             <p className="font-semibold">Your Library</p>
