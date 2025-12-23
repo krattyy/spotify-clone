@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar"; // Navbar'ı buraya ekliyoruz
 export default function App() {
   return (
     <div className="h-screen bg-black">
-      <div className="h-[90%] flex flex-col">
+      <div className="h-[92%] flex flex-col">
         <div className="w-full">
           <Navbar />
         </div>
