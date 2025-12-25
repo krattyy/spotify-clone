@@ -15,7 +15,7 @@ export default function Navbar() {
           />
         </div>
 
-        <div className=" w-[550px] flex justify-center items-center gap-4 max-w-175 mr-40 mt-1">
+        <div className=" w-137.5 flex justify-center items-center gap-4 max-w-175 mr-40 mt-1">
           <div
             onClick={() => navigate("/")}
             className="bg-[#1F1F1F] w-12 h-12 rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
