@@ -27,10 +27,41 @@ const DisplayAlbum = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex items-center">
         <img
           src={assets.green_play}
-          className=" w-14 pt-10 translate-y-2 cursor-pointer"
+          className=" w-14 pt-10 translate-y-2 cursor-pointer hover:scale-103  "
+          alt=""
+        />
+        <div className="relative group h-10 w-8 cursor-pointer translate-x-7 translate-y-7 border rounded">
+          <img
+            className="h-9.5 w-9 rounded shadow-2xl"
+            src={albumData.image}
+            alt=""
+          />
+
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <img src={assets.play_icon} className="w-4 h-4" alt="" />
+          </div>
+        </div>
+        <img
+          src={assets.shuffle_icon}
+          className="w-7 h-7 translate-x-14 cursor-pointer hover:scale-105 translate-y-6.5 opacity-60"
+          alt=""
+        />
+        <img
+          src={assets.add_icon}
+          className="w-7 h-7 translate-x-20 cursor-pointer hover:scale-105 translate-y-6.5 opacity-60 invert"
+          alt=""
+        />
+        <img
+          src={assets.circular_download}
+          className="w-7 h-7 translate-x-25 cursor-pointer hover:scale-105 translate-y-6.5 invert opacity-60"
+          alt=""
+        />
+        <img
+          src={assets.more}
+          className="w-7 h-7 translate-x-30 cursor-pointer hover:scale-105 translate-y-6.5 invert opacity-60"
           alt=""
         />
       </div>

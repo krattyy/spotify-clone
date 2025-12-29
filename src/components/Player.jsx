@@ -48,7 +48,7 @@ export default function Player() {
         <div className="flex items-center gap-5">
           <p className="text-[12px] text-gray-400">1:06</p>
           <div className="w-[40vw] max-w-150 bg-gray-600 rounded-full cursor-pointer h-1 group hover:h-1.5 transition-all">
-            <hr className="h-full border-none bg-green-500 rounded-full w-[30%] group-hover:bg-green-400" />
+            <hr className="h-full border-none bg-white rounded-full w-[30%] group-hover:bg-green-400" />
           </div>
           <p className="text-[12px] text-gray-400">3:20</p>
         </div>

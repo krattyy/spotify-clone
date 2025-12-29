@@ -46,6 +46,9 @@ import download_icon from "./download.png";
 import browse_icon from "./browse.png";
 import spotify_green from "./spotify_green.png";
 import green_play from "./green_play.svg";
+import circular_download from "./circular_download.png";
+import add_icon from "./add_icon.png";
+import more from "./more.png";
 
 export const assets = {
   bell_icon,
@@ -77,6 +80,9 @@ export const assets = {
   browse_icon,
   spotify_green,
   green_play,
+  circular_download,
+  add_icon,
+  more,
 };
 
 export const albumsData = [
