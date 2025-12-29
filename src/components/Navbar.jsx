@@ -35,7 +35,7 @@ export default function Navbar() {
             />
             <input
               type="text"
-              placeholder="Ne çalmak istiyorsun?"
+              placeholder="What Do you Want to Listen to?"
               className="bg-transparent w-full text-[17px] text-white border-none outline-none placeholder-gray-400 truncate "
             />
             <div className="w-px h-6 bg-white/50 mx-3 hidden sm:block"></div>
