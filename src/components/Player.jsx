@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { assets } from "../assets/assets";
 import { songsData } from "../assets/assets";
+import { PlayerContext } from "../context/PlayerContext.jsx";
 
 export default function Player() {
+  const { seekBar, seekBg, isPlaying, play, pause, time } =
+    useContext(PlayerContext);
+
   return (
     <div className="h-[8%] bg-black flex justify-between items-center text-white px-4">
       <div className="hidden lg:flex items-center gap-4">
@@ -29,11 +33,21 @@ export default function Player() {
             src={assets.prev_icon}
             alt=""
           />
-          <img
-            className="w-8 cursor-pointer hover:opacity-90"
-            src={assets.play_icon}
-            alt=""
-          />
+          {!isPlaying ? (
+            <img
+              onClick={play}
+              className="w-8 cursor-pointer hover:opacity-90"
+              src={assets.play_icon}
+              alt=""
+            />
+          ) : (
+            <img
+              onClick={pause}
+              className="w-8 cursor-pointer hover:opacity-90"
+              src={assets.pause_icon}
+              alt=""
+            />
+          )}
           <img
             className="w-4 cursor-pointer hover:opacity-80"
             src={assets.next_icon}
@@ -47,8 +61,14 @@ export default function Player() {
         </div>
         <div className="flex items-center gap-5">
           <p className="text-[12px] text-gray-400">1:06</p>
-          <div className="w-[40vw] max-w-150 bg-gray-600 rounded-full cursor-pointer h-1 group hover:h-1.5 transition-all">
-            <hr className="h-full border-none bg-white rounded-full w-[30%] group-hover:bg-green-400" />
+          <div
+            ref={seekBg}
+            className="w-[40vw] max-w-150 bg-gray-600 rounded-full cursor-pointer h-1 group hover:h-1.5 transition-all"
+          >
+            <hr
+              ref={seekBar}
+              className="h-full border-none bg-white rounded-full w-[30%] group-hover:bg-green-400"
+            />
           </div>
           <p className="text-[12px] text-gray-400">3:20</p>
         </div>
